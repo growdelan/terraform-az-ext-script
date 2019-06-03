@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
-yum install python-pip ansible wget -y
+yum install python-pip ansible wget git -y
 wget https://download.docker.com/linux/centos/docker-ce.repo -O /etc/yum.repos.d/docker-ce.repo
 yum install docker-ce docker-ce-cli containerd.io -y
 systemctl enable docker
